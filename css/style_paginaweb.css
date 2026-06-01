@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: midnightblue; 
+    color: white;
+}
+
+header {
+    background-color: navy;
+    padding: 16px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 16px;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #0044ff; 
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px; 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar {
+    background-color: midnightblue;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 2fr 1fr; 
+    }
+
+    .banner {
+        grid-column: 1 / span 2; 
+    }
+
+    .info {
+        grid-column: 1;
+    }
+
+    .sidebar {
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 13px;
+    }
+}
+.equipos-flex {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: space-around;
+    grid-column: 1 / span 1; 
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 250px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-top: 5px solid darkorange; 
+    text-align: center;
+}
+
+.card h3 {
+    color: midnightblue;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    .equipos-flex {
+        grid-column: 1; 
+    }
+}
+
+.logo-equipo {
+    width: 80px;    
+    height: 80px;
+    display: block;   
+    margin: 0 auto 15px auto;
+    object-fit: contain; 
+}
+
+.contenido-historia {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tabla-contenedor {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    color: white;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #0044ff;
+}
+
+
