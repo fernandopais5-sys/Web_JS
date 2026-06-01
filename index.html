@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Champions League Fans</title>
+    <link rel="stylesheet" href="css\style_paginaweb.css">
+<script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-evagd-laguna.js"></script><link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/cookies/cookies.css"/><script  type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/cookies/cookies.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/cookies/cookies-html.js"></script></head>
+
+<body>
+    <header>
+        <h1>UEFA Champions League</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="historia.html">Historia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+        <section class="banner">
+            <h2>El Torneo de Clubes más Prestigioso</h2>
+            <img src="imagenes\champions.jpg" alt="Trofeo Champions League" class="main-img">
+        </section>
+
+        <section class="info">
+            <article>
+                <h3>¿Qué es la Champions?</h3>
+                <p>La competición que reúne a los mejores equipos de Europa cada temporada.</p>
+            </article>
+            <article>
+                <h3>Máximos Ganadores</h3>
+                <p>Real Madrid, AC Milan y Liverpool lideran el palmarés histórico.</p>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Próxima Jornada</h3>
+            <ul>
+                <li>Real Madrid vs Man. City</li>
+                <li>Bayern vs Arsenal</li>
+            </ul>
+            <br>
+            <h3>Vota por tu favorito</h3>
+            <input type="text" id="votoEquipo" placeholder="Escribe el equipo">
+            <button onclick="votarGanador()">Enviar Voto</button>
+            <h3>Próxima Jornada</h3>
+            <p id="listaPartidos">Haz clic abajo para cargar los partidos.</p>
+            <input type="button" value="Mostrar Partidos" onclick="generarJornadas()">
+            <input type="button" value="Mostrar Menos" onclick="mostrarMenosJornadas()">
+        </aside>
+    </main>
+  
+  
+
+    <footer>
+        <p>&copy; 2026 Fan Page Champions - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="javascript/javascripty.js"></script>
+
+</body>
+</html>
